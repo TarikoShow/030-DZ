@@ -8,13 +8,13 @@
 // @grant        none
 // ==/UserScript==
 
-let input = document.getElementsByName("search-header")[0];
+let input = document.getElementsByName("q")[0];
 let links = document.links;
-let searchBtn = document.getElementsByName("search-header");
+let searchBtn = document.getElementsByName("search-header__field-button");
 let keywards = ["Базовые вещи про GIT", "10 самых популярных шрифтов от Google", "Отключение редакций и ревизий в WordPress"];
 let keyward = keywards[getRandom(0, keywards.lenght)];
 
-if (searchBtn !== null) {
+if (searchBtn !== undefined) {
   input.value = keyward;
   searchBtn.click();
 } else {
