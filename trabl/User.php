@@ -31,6 +31,7 @@ class User {
 
   //Статический метод добавления пользователя
   static function addUser() {
-    echo "User added";
+    global $mysqli;
+    var_dump($mysqli);
   }
 }
