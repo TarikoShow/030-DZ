@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="icon"
+      type="image"
+      href="favpng_viking-free-content-clip-art.png"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <style>
+      .main-navbar {
+        background-color: #00ff6d;
+      }
+      .my-wrapper {
+        margin: auto;
+        max-width: 1920px;
+      }
+      .carousel-header {
+        font-size: 2rem;
+        color: #e7ff10;
+      }
+      .card {
+        background: rgb(150, 150, 233);
+      }
+      .row {
+        margin: auto;
+      }
+      .second-block {
+        background-image: url(image/Palms.jpg);
+        display: flex;
+        background-size: cover;
+        background-position: center;
+        height: 20rem;
+        text-align: center;
+        margin: auto;
+        padding: 1%;
+      }
+      .card-second-block {
+        border: 1px solid blue;
+        margin: auto;
+        padding: 1rem;
+        background: rgba(45, 187, 140, 0.5);
+        box-shadow: 0 0 8px 8px hsl(0, 0%, 50%);
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+      }
+    </style>
+    <title>Zadanie5</title>
+  </head>
+  <body>
+    <!-- Main navbar start -->
+    <div class="my-wrapper">
+      <header class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light main-navbar">
+          <a class="navbar-brand" href="zadanie5.html"
+            ><img src="image/logo.png" alt="LOGO" />Панель навигации</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Переключатель навигации"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"
+                  >Главная <span class="sr-only">(текущая)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Ссылка</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Выпадающий список
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Действие</a>
+                  <a class="dropdown-item" href="#">Другое действие</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Что-то еще здесь</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+    </div>
+    <!-- Main novbar end -->
+    <!-- Corousel start -->
+    <div class="my-wrapper mt-3">
+      <section class="container-fluid">
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselExampleCaptions"
+              data-slide-to="0"
+              class=""
+            ></li>
+            <li
+              data-target="#carouselExampleCaptions"
+              data-slide-to="1"
+              class="active"
+            ></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item">
+              <img
+                src="image/slide01.webp"
+                class="d-block w-100"
+                alt="Слайдер карусели"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="carousel-header">Кипр</h5>
+                <p>Скидка!!!<a href="#">Подробности</a></p>
+              </div>
+            </div>
+            <div class="carousel-item active">
+              <img
+                src="image/slide02.webp"
+                class="d-block w-100"
+                alt="Слайдер карусели"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="carousel-header">Тайланд</h5>
+                <p>Спецпредложение!!!</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="image/slide03.jpg"
+                class="d-block w-100"
+                alt="Слайдер карусели"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="carousel-header">Филиппины</h5>
+                <p>Телефон <a href="tel:+78005553535">8-800-555-35-35</a></p>
+              </div>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleCaptions"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only"></span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleCaptions"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only"></span>
+          </a>
+        </div>
+      </section>
+    </div>
+    <!-- Corousel end -->
+    <!-- First block start -->
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Кипр</h5>
+            <p class="card-text">
+              Город Никосия (Лефкосия) — столица и крупнейший город Кипра.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Филиппины</h5>
+            <p class="card-text">Филиппины сокращенно называют Фили.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Тайланд</h5>
+            <p class="card-text">В Тайланде есть город Пхукет.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- First block end -->
+    <!-- Second block start -->
+    <div class="container-fluid second-block">
+      <div class="card-second-block">
+        <div class="card-body">
+          <h5 class="card-title">Особое обращение с заголовком</h5>
+          <p class="card-text">
+            С вспомогательным текстом ниже в качестве естественного перехода к
+            дополнительному контенту.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Second block end -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
